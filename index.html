@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Asraful Alom | Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* BANNER */
+        .top-banner img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 1px solid #d6ca26;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #0e0c0c;
+            padding: 3px 0;
+            border: 1px solid #d6cb2a;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        #hero {
+            padding: 30px 0;
+        }
+        #hero h2 {
+            font-size: 22px;
+            color: #ccc;
+        }
+        #hero h1 {
+            font-size: 48px;
+            color: white;
+        }
+        #hero h1 span {
+            color: #d6ca26;
+        }
+        .small-line {
+            margin-top: 15px;
+            border-left: 3px solid #d6ca26;
+            padding-left: 15px;
+            color: #ccc;
+            font-style: italic;
+        }
+
+        /* SECTIONS */
+        section {
+            margin-top: 20px;
+        }
+        section h2 {
+            color: #feffff;
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+
+        /* VIDEO BOX */
+        .video-box {
+            border: 3px solid #d6ca26;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #160808;
+            margin-bottom: 20px;
+        }
+        .video-box h3 {
+            color: #feffff;
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+        .video-box p {
+            color: #f7f7f7;
+            text-align: justify;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .video-box iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            border: none;
+        }
+        .video-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #222;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d6ca26;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+            border: 1px dashed #d6ca26;
+        }
+
+        /* FOUNDER */
+        #founder {
+            border: 1px solid #d6ca26;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #160808;
+        }
+        .founder-text {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .founder-text h2 {
+            color: #3c0357;
+            text-decoration: underline;
+        }
+        .founder-text p {
+            color: #f7f7f7;
+            font-style: italic;
+        }
+        .founder-image {
+            width: 200px;
+            margin: 0 auto;
+        }
+        .founder-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #d6ca26;
+        }
+
+        /* ABOUT */
+        #about {
+            border: 1px solid #d6ca26;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #160808;
+            color: #f7f7f7;
+        }
+        #about p {
+            text-align: justify;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        /* LINKS */
+        #link {
+            border: 1px solid #d6ca26;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #160808;
+        }
+        #link a {
+            display: block;
+            color: #f7f7f7;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+        #link a:hover {
+            color: gold;
+            border-color: gold;
+        }
+
+        /* CONTACT */
+        #contact {
+            border: 1px solid #d6ca26;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #160808;
+            color: #f7f7f7;
+        }
+        #contact p {
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 1px solid #d6ca26;
+            color: #ccc;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* TERMS */
+        #terms {
+            border: 1px solid #d6ca26;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #160808;
+            color: #f7f7f7;
+            margin-top: 15px;
+            text-align: left;
+        }
+        #terms p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="top-banner">
+            <img src="images/banner.png" alt="Asraful Alom Banner">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <a href="#hero">Home</a>
+        <a href="#founder">About Me</a>
+        <a href="#video">Videos</a>
+        <a href="#link">Links</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="hero">
+        <div class="right">
+            <h2>Hello, I'm</h2>
+            <h1>Asraful <span>Alom</span></h1>
+            <div class="small-line">
+                <p>I'm a website developer, video editor and content creator. I have experience in this field and have worked with many clients. I am always ready to work with new clients and help them achieve their goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>MY VIDEOS</h2>
+
+        <!-- Video 1 -->
+        <div class="video-box">
+            <h3>What Will You Choose After 12th?</h3>
+            <p>In this video I will show you how to choose the right career path after completing your 12th grade — Science, Commerce, or Arts.</p>
+            <iframe src="https://www.youtube.com/embed/17UkyFV_BBU" allowfullscreen></iframe>
+            <p style="margin-top:12px; text-align:center;">
+                🔴 Subscribe to my channel: 
+                <a href="https://www.youtube.com/@asrafulvibes7m" target="_blank" style="color:#d6ca26; font-weight:bold;">@asrafulvibes7m</a>
+            </p>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-box">
+            <h3>How To Grow Your Channel</h3>
+            <p>In this video I will show you how to grow your YouTube channel fast. Learn the best tips and strategies to increase your subscribers and views!</p>
+            <iframe src="https://www.youtube.com/embed/ORajGrGwxyM" allowfullscreen></iframe>
+            <p style="margin-top:12px; text-align:center;">
+                🔴 Subscribe to my channel: 
+                <a href="https://www.youtube.com/@asrafulvibes7m" target="_blank" style="color:#d6ca26; font-weight:bold;">@asrafulvibes7m</a>
+            </p>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-box">
+            <h3>Stay Motivated And Never Give Up</h3>
+            <p>This motivational video will inspire you to keep going even when things get tough. Let it fuel your determination to succeed!</p>
+            <iframe src="https://www.youtube.com/embed/Z-aHNsUciBQ" allowfullscreen></iframe>
+            <p style="margin-top:12px; text-align:center;">
+                🔴 Subscribe to my channel: 
+                <a href="https://www.youtube.com/@asrafulvibes7m" target="_blank" style="color:#d6ca26; font-weight:bold;">@asrafulvibes7m</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="founder">
+        <div class="founder-text">
+            <h2>FOUNDER OF THIS WEBSITE</h2>
+            <p>Asraful Alom is the founder of this website. He is a website developer, video editor and content creator. He is always ready to work with new clients and help them achieve their goals.</p>
+        </div>
+        <div class="founder-image">
+            <img src="images/founder.png" alt="Asraful Alom - Founder">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>ABOUT ME</h2>
+        <p>Welcome to my website! I'm a passionate website developer, video editor, and content creator. I specialize in creating engaging digital content and building responsive websites that deliver exceptional user experiences.</p>
+        <p>As a website developer, I have a strong command of HTML, CSS, JavaScript, and various web development frameworks. I enjoy crafting visually appealing and functional websites that meet the unique needs of my clients.</p>
+        <p>In addition to web development, I am also skilled in video editing. I create captivating videos for various purposes, including promotional content, tutorials, and social media campaigns.</p>
+    </section>
+
+    <section id="link">
+        <h2>MY LINKS</h2>
+        <a href="https://www.instagram.com/asraful_vibes7m" target="_blank">📸 Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61574961983050" target="_blank">📘 Facebook</a>
+        <a href="https://www.youtube.com/@asrafulvibes7m" target="_blank">▶️ YouTube</a>
+    </section>
+
+    <section id="contact">
+        <h2>CONTACT ME</h2>
+        <p>If you have any questions or would like to collaborate on website building, feel free to reach out!</p>
+        <p>📞 Phone: +91 8134923899</p>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting my website! Whether you're interested in website development, video editing, or content creation — I'm here to help. Let's create something amazing together!</p>
+
+        <section id="terms">
+            <h2>Terms & Policies</h2>
+            <p>All contents on this website belong to Asraful Alom. Copying or using any content without permission is strictly prohibited. For any inquiries regarding content usage, please contact me directly.</p>
+            <p>Your privacy is important to me. I do not share any personal information from visitors to this website. Any information you provide will be used solely for responding to your inquiries.</p>
+        </section>
+
+        <p style="margin-top: 15px;">Copyright &copy; 2026 Asraful Alom. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
